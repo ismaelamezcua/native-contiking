@@ -2,7 +2,7 @@
 
 CONTIKI_INSTALL_DIR="~/.native-contiki"
 
-echo "This script will install all dependencies for the native tool-chain for Contiki-NG"
+echo "This script will install all depdendencies for the native toolchain for Contiki-NG"
 
 # System update
 echo "Updating your system..."
@@ -50,7 +50,7 @@ sudo usermod -a -G plugdev $USER
 sudo usermod -a -G dialout $USER
 echo 'ATTRS{idVendor}=="0451", ATTRS{idProduct}=="16c8", ENV{ID_MM_DEVICE_IGNORE}="1"' >> /lib/udev/rules.d/77-mm-usb-device-blacklist.rules
 
-echo "Native tool-chain installation has completed."
+echo "Native toolchain installation has completed."
 echo "You can clone the Contiki-NG repository now."
 echo "============================================================"
 
